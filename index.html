@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Art Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>My Art Gallery</h1>
+    </header>
+    <main>
+        <div class="art-gallery">
+            <div class="art-item" onclick="showArtDetails('art1')">
+                <img src="https://picsum.photos/300/200/?random" alt="Artwork 1">
+                <p>Artwork 1</p>
+            </div>
+            <div class="art-item" onclick="showArtDetails('art2')">
+                <img src="https://picsum.photos/300/200/?random" alt="Artwork 2">
+                <p>Artwork 2</p>
+            </div>
+            <!-- Add more art items here -->
+        </div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Artwork">
+            <h2 id="modal-title">Artwork Title</h2>
+            <p id="modal-description">Description goes here.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
